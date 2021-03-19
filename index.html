@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<body>
+    
+    <script>
+        
+        // Khai báo biến.
+        var user = prompt("Who's there?", '');
+
+        // Đối chiếu tên đăng nhập.
+        if (user == "Admin") {
+            alert("Hãy nhập password!");
+
+            // Khai báo biến.
+            var pass = prompt("Password?");
+
+            // Đối chiếu mật khẩu.
+            if (pass == "TheMaster") {
+                alert("Wellcome");
+            } else if (pass == "null") {
+                alert("Canceld");
+            } else {
+                alert("Wrong password");
+            }
+
+        } else if (user == "null") {
+            alert("Canceld");
+        } else {
+            alert("I don't know you");
+        }
+
+    </script>
+
+</body>
+</html>
